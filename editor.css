@@ -1,0 +1,18 @@
+.fd-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.fd-menu {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.fd-editable-text {
+    color: var(--page-fg-high-contrast);
+    padding-right: 40px;
+    outline: none;
+}

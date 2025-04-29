@@ -1,0 +1,107 @@
+/* ---------- Fonts ---------- */
+
+[data-font="serif"] { --font-family: "Hedvig Letters Serif"; }
+[data-font="sans"] { --font-family: "Albert Sans"; }
+
+/* ---------- Themes ---------- */
+
+[data-theme="light"] {
+    --page-bg: #F5F8FC;
+    --page-fg-high-contrast: #29374F;
+    --page-fg-low-contrast: #6F8BB3;
+
+    --button-primary-bg: #536C91;
+    --button-primary-bg-hover: #3D5170;
+    --button-primary-fg: #DFE9F5;
+    --button-secondary-bg: #DFE9F5;
+    --button-secondary-bg-hover: #C1D3E8;
+    --button-secondary-fg: #536C91;
+
+    --caret: #CF931D;
+}
+
+[data-theme="dark"] {
+    --page-bg: #111214;
+    --page-fg-high-contrast: #C1C5CC;
+    --page-fg-low-contrast: #5C6270;
+
+    --button-primary-bg: #E0E2E6;
+    --button-primary-bg-hover: #F1F2F3;
+    --button-primary-fg: #5C6270;
+    --button-secondary-bg: #292C33;
+    --button-secondary-bg-hover: #424852;
+    --button-secondary-fg: #A0A5B1;
+
+    --caret: #F0BB41;
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--page-fg-low-contrast);
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    caret-color: var(--caret);
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 64px 40px 50vh 40px;
+}
+
+p {
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+a {
+    color: var(--page-fg-low-contrast);
+}
+
+a:hover {
+    color: var(--page-fg-high-contrast);
+}
+
+/* ---------- Button ---------- */
+
+.fd-button {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fd-button-label {
+    margin-left: 8px;
+}
+
+.fd-button.primary {
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-fg);
+}
+
+.fd-button.primary:hover {
+    background-color: var(--button-primary-bg-hover);
+}
+
+.fd-button.secondary {
+    background-color: var(--button-secondary-bg);
+    color: var(--button-secondary-fg);
+}
+
+.fd-button.secondary:hover {
+    background-color: var(--button-secondary-bg-hover);
+}
+
+.fd-logo {
+    color: var(--page-fg-high-contrast);
+}

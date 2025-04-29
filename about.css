@@ -1,0 +1,34 @@
+.fd-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.fd-back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fd-logo {
+    color: var(--page-fg-high-contrast);
+}
+
+.fd-about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fd-about-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fd-about-caption {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
