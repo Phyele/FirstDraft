@@ -1,6 +1,6 @@
 # FirstDraft
 
-FirstDraft is a writing tool designed to help you **resist the temptation to edit** while working on your first draft.
+[FirstDraft](https://phyele.github.io/FirstDraft/) is a writing tool designed to help you **resist the temptation to edit** while working on your first draft.
 
 **Allowing edits only to the word you are currently typing** encourages you to focus on writing rather than making premature corrections.
 
